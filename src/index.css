@@ -1,0 +1,374 @@
+/* ///////FOOTER//////// */
+.footer {
+  width: 100vw;
+  height: 300px;
+
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100vh;
+}
+.topBox {
+  width: 40vw;
+  height: 150px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+.leftBox {
+  width: 12vw;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.middleBox {
+  width: 12vw;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.rightBox {
+  width: 12vw;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.footer h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: white;
+}
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.footer ul a:hover {
+  opacity: 1;
+}
+.midBox {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 40px;
+}
+.footer .midBox i {
+  list-style: none;
+  line-height: 1.6;
+  font-size: 30px;
+  color: white;
+  /* border-radius: 30px, 30px;
+  border: 1px solid white; */
+}
+.footer .midBox i a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+.midBox i a:hover {
+  opacity: 1;
+}
+.bottomBox {
+  display: flex;
+  align-self: center;
+}
+.copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+  color: white;
+}
+/* /////NAVBAR////// */
+body {
+  margin: 0;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 100;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-color: lightslategray;
+  width: 100%;
+  height: 43px;
+  position: fixed;
+  z-index: 99 !important;
+}
+#logo {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 8px;
+  left: 12%;
+  float: left;
+  margin-top: 1px;
+}
+#logo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+nav {
+  position: absolute;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 70px;
+  font-size: 18px;
+}
+nav a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.banner {
+  background: url("http://mateen.kurdzman.net/ban.png") no-repeat;
+  width: 100%;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+}
+/* /////Intro///// */
+.mapic {
+  width: 100vw;
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+  opacity: 0.6;
+  transition: 0.9s;
+}
+.mapic:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+.firstPic {
+  width: 96%;
+  height: 76vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.boy {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 150px;
+  left: 600px;
+  transition: 1s;
+}
+.boy:hover {
+  scale: 1.4;
+  transition: 1s;
+  border: 3px solid rgb(74, 224, 119);
+  border-radius: 50%;
+}
+.boy {
+  animation: infinite moving;
+  animation-duration: 16s;
+}
+@keyframes moving {
+  0% {
+    left: 600px;
+    top: 150px;
+  }
+  25% {
+    left: 650px;
+    top: 140px;
+  }
+  50% {
+    left: 620px;
+    top: 200px;
+  }
+  75% {
+    left: 550px;
+    top: 220px;
+  }
+  100% {
+    left: 600px;
+    top: 150px;
+  }
+}
+.girl {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 400px;
+  left: 1000px;
+  transition: 1s;
+}
+.girl:hover {
+  scale: 1.4;
+  transition: 1s;
+  border: 3px solid rgb(74, 224, 119);
+  border-radius: 50%;
+}
+.girl {
+  animation: infinite moving2;
+  animation-duration: 16s;
+  animation-delay: 3s;
+}
+@keyframes moving2 {
+  0% {
+    left: 1000px;
+    top: 400px;
+  }
+  25% {
+    left: 1050px;
+    top: 440px;
+  }
+  50% {
+    left: 1020px;
+    top: 420px;
+  }
+  75% {
+    left: 950px;
+    top: 390px;
+  }
+  100% {
+    left: 1000px;
+    top: 400px;
+  }
+}
+.details {
+  position: absolute;
+  width: 30vw;
+  height: 76vh;
+  background-color: rgba(105, 105, 105, 0.8);
+  top: 80px;
+  left: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dhead {
+  top: 3vh;
+  left: 1vw;
+  position: relative;
+  display: flex;
+}
+.boypic {
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  opacity: 1;
+}
+.name {
+  align-self: flex-end;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 600;
+}
+.heart {
+  height: 100px;
+  width: 100px;
+  margin-left: 8vw;
+  margin-bottom: 2vh;
+  animation: 2s ease 0s infinite beat;
+}
+@keyframes beat {
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+.pulse {
+  color: white;
+  margin-top: 2vh;
+  margin-left: -2.7vw;
+  font-weight: 500;
+  animation: 2s ease 0s infinite beat;
+}
+.info {
+  position: relative;
+  top: 8vh;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.lat {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+}
+.lon {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+}
+.boldi {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 800;
+}
+.info2 {
+  position: relative;
+  top: 12vh;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.info3 {
+  display: flex;
+  flex-direction: row;
+}
+.temp {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 1vh;
+}
+.celsius {
+  margin-top: 3vh;
+  font-weight: 500;
+}
+.foots {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1vh;
+}
+.steps {
+  font-weight: 500;
+  margin-top: 2vh;
+}
+.sleep {
+  font-weight: 400;
+}
